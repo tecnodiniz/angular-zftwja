@@ -1,6 +1,15 @@
+<!-- Fazendo de maneira manual -->
+
 <input type="text"
 [value] = "placeholder"
 (input) = "placeholder = $any($event.target).value"
 />
 
 <p>{{placeholder}}</p>
+
+<!-- Usando a diretiva do Angular -->
+<input type="text"
+[(ngModel)]="placepass"
+/>
+
+<p>{{placepass}}</p>
