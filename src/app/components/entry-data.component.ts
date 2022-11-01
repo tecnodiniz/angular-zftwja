@@ -1,4 +1,4 @@
-import { Component, Input} from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'entry-data',
@@ -6,10 +6,8 @@ import { Component, Input} from '@angular/core';
   styleUrls: ['./entry-data.component.css']
 })
 export class EntryDataComponent {
-  @Input() text:string;
+  placeholder:string = "email";
  
-  typing(){
-    alert('ligado')
-  }
+ 
 
 }
